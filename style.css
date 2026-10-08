@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+}
+
+:root {
+    --clr-blue: #1992d4;
+    --clr-greey-light: #e2e8f0;
+    --clr-black: black;
+    --clr-white: white;
+}
