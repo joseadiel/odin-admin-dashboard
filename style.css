@@ -28,6 +28,8 @@ body {
     min-height: 100vh;
 }
 
+/* Header */
+
 .header {
     grid-area: header;
     background-color: var(--clr-white);
@@ -39,6 +41,8 @@ body {
     grid-template: 1fr 1fr / 1fr 1fr;
 }
 
+/* Sidebar */
+
 .sidebar {
     grid-area: sidebar;
     background-color: var(--clr-blue);
@@ -48,8 +52,36 @@ body {
 
 .sidebar {
     display: grid;
-    grid-template: 80px 1fr 1fr / 1fr;
+    grid-template: 60px 1fr 1fr / 1fr;
 }
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.menu div,
+.admin div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+a {
+    font-weight: bold;
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+/* Main Content */
 
 .main-content {
     grid-area: main-content;
@@ -109,9 +141,9 @@ body {
     grid-area: announcements;
     display: grid;
     grid-template: 25px 1fr / 1fr;
-    grid-template-areas: 
-    "title-2"
-    "content-1";
+    grid-template-areas:
+        "title-2"
+        "content-1";
     padding: 5px;
 }
 
@@ -127,9 +159,9 @@ body {
     grid-area: trending;
     display: grid;
     grid-template: 25px 1fr / 1fr;
-    grid-template-areas: 
-    "title-3"
-    "content-2";
+    grid-template-areas:
+        "title-3"
+        "content-2";
     padding: 5px;
 }
 
